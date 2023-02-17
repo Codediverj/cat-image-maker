@@ -1,4 +1,3 @@
-import './App.css';
 import React from "react";
 import Title from './components/Title';
 import Form from './components/Form';
@@ -67,7 +66,7 @@ const App = () => {
   const counterTitle = counter===null ? "" : counter;
 
   return(
-    <div>
+    <div className='text-center'>
       <Title>Cat{counterTitle} Say...</Title>
       <Form updateMainCat={updateMainCat}/>
       <MainCard img={mainCat} handleHeartClick={handleHeartClick} alreadyFavorite={alreadyFavorite}/>

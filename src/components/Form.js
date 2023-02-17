@@ -32,8 +32,9 @@ const Form = ({updateMainCat}) => {
         placeholder="Please type something" 
         value={value}
         onChange={handleInputChange}
+        className="border border-primary-mint box-border h-9 text-primary-mint px-3 placeholder:text-primary-mint rounded-l-lg"
         />
-        <button type="submit">Submit</button>
+        <button type="submit" className="bg-primary-mint px-4 h-9 text-white font-bold mb-8 rounded-r-lg">Create</button>
         <p style={{color:"red"}}>{errorMessage}</p>
       </form>
     );
